@@ -1,0 +1,946 @@
+{
+  "slideCount": 2,
+  "filename": "demo.pptx",
+  "version": 35,
+  "importTime": "2022-12-03 02:59:56",
+  "modifyTime": "2022-12-19 07:52:04",
+  "width": 960.0,
+  "height": 720.0,
+  "slides": [
+    {
+      "slide": "第1页",
+      "shapes": [
+        {
+          "type": 1,
+          "hasevent": false,
+          "properties": {
+            "x": 272.0,
+            "y": 575.5,
+            "width": 640.0,
+            "height": 95.67,
+            "text": ""
+          }
+        },
+        {
+          "type": 1,
+          "hasevent": false,
+          "properties": {
+            "x": 40.0,
+            "y": 135.17,
+            "width": 232.0,
+            "height": 128.0,
+            "text": ""
+          }
+        },
+        {
+          "type": 1,
+          "hasevent": false,
+          "properties": {
+            "x": 272.0,
+            "y": 135.17,
+            "width": 640.0,
+            "height": 440.33,
+            "text": ""
+          }
+        },
+        {
+          "type": 1,
+          "hasevent": false,
+          "properties": {
+            "x": 40.0,
+            "y": 71.17,
+            "width": 232.0,
+            "height": 31.5,
+            "text": ""
+          }
+        },
+        {
+          "type": 1,
+          "hasevent": false,
+          "properties": {
+            "x": 40.0,
+            "y": 263.17,
+            "width": 232.0,
+            "height": 176.0,
+            "text": ""
+          }
+        },
+        {
+          "type": 1,
+          "hasevent": false,
+          "properties": {
+            "x": 40.0,
+            "y": 439.17,
+            "width": 232.0,
+            "height": 232.0,
+            "text": ""
+          }
+        },
+        {
+          "type": 1,
+          "hasevent": false,
+          "properties": {
+            "x": 40.0,
+            "y": 102.67,
+            "width": 232.0,
+            "height": 32.5,
+            "text": ""
+          }
+        },
+        {
+          "type": 1,
+          "hasevent": false,
+          "properties": {
+            "x": 272.0,
+            "y": 71.17,
+            "width": 200.0,
+            "height": 32.17,
+            "text": ""
+          }
+        },
+        {
+          "type": 1,
+          "hasevent": false,
+          "properties": {
+            "x": 472.0,
+            "y": 71.17,
+            "width": 200.0,
+            "height": 32.0,
+            "text": ""
+          }
+        },
+        {
+          "type": 1,
+          "hasevent": false,
+          "properties": {
+            "x": 672.0,
+            "y": 71.17,
+            "width": 240.0,
+            "height": 32.0,
+            "text": ""
+          }
+        },
+        {
+          "type": 1,
+          "hasevent": false,
+          "properties": {
+            "x": 272.0,
+            "y": 102.67,
+            "width": 640.0,
+            "height": 32.5,
+            "text": ""
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 80.0,
+            "y": 72.33,
+            "width": 67.83,
+            "height": 29.0,
+            "text": "名称："
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 79.0,
+            "y": 105.5,
+            "width": 72.33,
+            "height": 29.0,
+            "text": "文 字："
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 538.17,
+            "y": 70.67,
+            "width": 67.83,
+            "height": 29.0,
+            "text": "时间："
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 333.33,
+            "y": 72.17,
+            "width": 116.33,
+            "height": 29.0,
+            "text": "文字文字文字"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 713.5,
+            "y": 72.17,
+            "width": 134.0,
+            "height": 29.0,
+            "text": "文字文字文字"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 472.0,
+            "y": 105.5,
+            "width": 222.17,
+            "height": 29.0,
+            "text": "文字文字文字*****************"
+          }
+        },
+        {
+          "type": 13,
+          "hasevent": false,
+          "properties": {
+            "x": 272.0,
+            "y": 137.17,
+            "width": 641.0,
+            "height": 438.33,
+            "source": "imgs/cd0f6274732d4c4bb8104797454a15bc.png"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 283.17,
+            "y": 168.5,
+            "width": 111.0,
+            "height": 67.83,
+            "text": "X卡箍装配：\n物料1\n物料2"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": true,
+          "properties": {
+            "x": 277.67,
+            "y": 227.67,
+            "width": 140.33,
+            "height": 25.83,
+            "text": "见标准作业11-12-13",
+            "uri": "videos/2300a99fb741f470f1040437f708b14f.mp4"
+          }
+        },
+        {
+          "type": 9,
+          "hasevent": false,
+          "properties": {
+            "begin_x": 347.83,
+            "begin_y": 253.5,
+            "end_x": 326.5,
+            "end_y": 349.83,
+            "text": "见标准作业11-12-13"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 403.0,
+            "y": 155.5,
+            "width": 78.67,
+            "height": 29.17,
+            "text": "X件装配"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": true,
+          "properties": {
+            "x": 401.83,
+            "y": 174.67,
+            "width": 140.33,
+            "height": 26.0,
+            "text": "见标准作业12-12-14",
+            "uri": "videos/2300a99fb741f470f1040437f708b14f.mp4"
+          }
+        },
+        {
+          "type": 9,
+          "hasevent": false,
+          "properties": {
+            "begin_x": 450.83,
+            "begin_y": 194.5,
+            "end_x": 378.17,
+            "end_y": 336.83,
+            "text": "见标准作业12-12-14"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 49.67,
+            "y": 282.5,
+            "width": 198.67,
+            "height": 48.33,
+            "text": "装配顺序：\n1-2-3-4-5-6"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 49.67,
+            "y": 150.83,
+            "width": 198.67,
+            "height": 29.0,
+            "text": "引用标准作业："
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 284.5,
+            "y": 324.83,
+            "width": 29.83,
+            "height": 32.33,
+            "text": "1"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 368.83,
+            "y": 336.83,
+            "width": 29.67,
+            "height": 32.33,
+            "text": "2"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 310.67,
+            "y": 473.17,
+            "width": 94.67,
+            "height": 29.0,
+            "text": "X卡箍装配"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": true,
+          "properties": {
+            "x": 309.5,
+            "y": 492.33,
+            "width": 140.17,
+            "height": 25.83,
+            "text": "见标准作业11-12-13",
+            "uri": "videos/2300a99fb741f470f1040437f708b14f.mp4"
+          }
+        },
+        {
+          "type": 9,
+          "hasevent": false,
+          "properties": {
+            "begin_x": 368.83,
+            "begin_y": 473.17,
+            "end_x": 442.67,
+            "end_y": 343.33,
+            "text": "见标准作业11-12-13"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 437.67,
+            "y": 349.83,
+            "width": 29.83,
+            "height": 32.33,
+            "text": "3"
+          }
+        },
+        {
+          "type": 9,
+          "hasevent": false,
+          "properties": {
+            "begin_x": 633.83,
+            "begin_y": 171.67,
+            "end_x": 562.67,
+            "end_y": 211.33,
+            "text": "3"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 635.0,
+            "y": 139.67,
+            "width": 78.5,
+            "height": 29.0,
+            "text": "X件装配"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": true,
+          "properties": {
+            "x": 633.83,
+            "y": 158.83,
+            "width": 140.17,
+            "height": 25.83,
+            "text": "见标准作业12-12-15",
+            "uri": "videos/2300a99fb741f470f1040437f708b14f.mp4"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 549.83,
+            "y": 166.67,
+            "width": 29.83,
+            "height": 32.33,
+            "text": "4"
+          }
+        },
+        {
+          "type": 9,
+          "hasevent": false,
+          "properties": {
+            "begin_x": 548.83,
+            "begin_y": 466.67,
+            "end_x": 622.33,
+            "end_y": 356.83,
+            "text": "4"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 467.5,
+            "y": 464.0,
+            "width": 94.67,
+            "height": 29.0,
+            "text": "X卡箍装配"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": true,
+          "properties": {
+            "x": 466.33,
+            "y": 483.17,
+            "width": 140.17,
+            "height": 25.83,
+            "text": "见标准作业11-12-13",
+            "uri": "videos/2300a99fb741f470f1040437f708b14f.mp4"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 583.17,
+            "y": 336.67,
+            "width": 29.67,
+            "height": 32.33,
+            "text": "5"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 280.33,
+            "y": 580.83,
+            "width": 198.67,
+            "height": 67.83,
+            "text": "注意事项：\n\n*******"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 477.83,
+            "y": 579.0,
+            "width": 152.0,
+            "height": 67.83,
+            "text": "工艺技术要求：\n\n*******"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 675.33,
+            "y": 583.17,
+            "width": 130.83,
+            "height": 67.83,
+            "text": "物料信息：\n\n*******"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 55.0,
+            "y": 363.33,
+            "width": 198.83,
+            "height": 67.83,
+            "text": "工具信息：\n\n*******"
+          }
+        },
+        {
+          "type": 1,
+          "hasevent": false,
+          "properties": {
+            "x": 40.0,
+            "y": 40.0,
+            "width": 872.0,
+            "height": 31.33,
+            "text": "XX装配标准作业指导书"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": true,
+          "properties": {
+            "x": 48.67,
+            "y": 176.33,
+            "width": 198.67,
+            "height": 29.0,
+            "text": "XXXXXXXX",
+            "uri": "videos/2300a99fb741f470f1040437f708b14f.mp4"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": true,
+          "properties": {
+            "x": 49.83,
+            "y": 209.33,
+            "width": 198.67,
+            "height": 29.17,
+            "text": "XXXXXXXX",
+            "uri": "videos/2300a99fb741f470f1040437f708b14f.mp4"
+          }
+        },
+        {
+          "type": 13,
+          "hasevent": true,
+          "properties": {
+            "x": 42.83,
+            "y": 463.67,
+            "width": 226.0,
+            "height": 176.33,
+            "source": "imgs/0f7cf441f6814fcaaa1b1c13e727f15b.png",
+            "uri": "videos/2300a99fb741f470f1040437f708b14f.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "slide": "第2页",
+      "shapes": [
+        {
+          "type": 1,
+          "hasevent": false,
+          "properties": {
+            "x": 272.0,
+            "y": 575.5,
+            "width": 640.0,
+            "height": 95.67,
+            "text": ""
+          }
+        },
+        {
+          "type": 1,
+          "hasevent": false,
+          "properties": {
+            "x": 40.0,
+            "y": 135.17,
+            "width": 232.0,
+            "height": 128.0,
+            "text": ""
+          }
+        },
+        {
+          "type": 1,
+          "hasevent": false,
+          "properties": {
+            "x": 272.0,
+            "y": 135.17,
+            "width": 640.0,
+            "height": 440.33,
+            "text": ""
+          }
+        },
+        {
+          "type": 1,
+          "hasevent": false,
+          "properties": {
+            "x": 40.0,
+            "y": 71.17,
+            "width": 232.0,
+            "height": 31.5,
+            "text": ""
+          }
+        },
+        {
+          "type": 1,
+          "hasevent": false,
+          "properties": {
+            "x": 40.0,
+            "y": 263.17,
+            "width": 232.0,
+            "height": 176.0,
+            "text": ""
+          }
+        },
+        {
+          "type": 1,
+          "hasevent": false,
+          "properties": {
+            "x": 40.0,
+            "y": 439.17,
+            "width": 232.0,
+            "height": 232.0,
+            "text": ""
+          }
+        },
+        {
+          "type": 1,
+          "hasevent": false,
+          "properties": {
+            "x": 40.0,
+            "y": 102.67,
+            "width": 232.0,
+            "height": 32.5,
+            "text": ""
+          }
+        },
+        {
+          "type": 1,
+          "hasevent": false,
+          "properties": {
+            "x": 272.0,
+            "y": 71.17,
+            "width": 200.0,
+            "height": 32.17,
+            "text": ""
+          }
+        },
+        {
+          "type": 1,
+          "hasevent": false,
+          "properties": {
+            "x": 472.0,
+            "y": 71.17,
+            "width": 200.0,
+            "height": 32.0,
+            "text": ""
+          }
+        },
+        {
+          "type": 1,
+          "hasevent": false,
+          "properties": {
+            "x": 672.0,
+            "y": 71.17,
+            "width": 240.0,
+            "height": 32.0,
+            "text": ""
+          }
+        },
+        {
+          "type": 1,
+          "hasevent": false,
+          "properties": {
+            "x": 272.0,
+            "y": 102.67,
+            "width": 640.0,
+            "height": 32.5,
+            "text": ""
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 80.0,
+            "y": 72.33,
+            "width": 67.83,
+            "height": 29.0,
+            "text": "名称："
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 79.0,
+            "y": 105.5,
+            "width": 72.33,
+            "height": 29.0,
+            "text": "文 字："
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 538.17,
+            "y": 70.67,
+            "width": 67.83,
+            "height": 29.0,
+            "text": "时间："
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 333.33,
+            "y": 72.17,
+            "width": 116.33,
+            "height": 29.0,
+            "text": "文字文字文字"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 713.5,
+            "y": 72.17,
+            "width": 134.0,
+            "height": 29.0,
+            "text": "文字文字文字"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 472.0,
+            "y": 105.5,
+            "width": 222.17,
+            "height": 29.0,
+            "text": "文字文字文字*****************"
+          }
+        },
+        {
+          "type": 13,
+          "hasevent": false,
+          "properties": {
+            "x": 272.0,
+            "y": 137.17,
+            "width": 641.0,
+            "height": 438.33,
+            "source": "imgs/003efff968d643279700037fcac4ae7c.png"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 403.0,
+            "y": 155.5,
+            "width": 78.67,
+            "height": 29.17,
+            "text": "X件装配"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": true,
+          "properties": {
+            "x": 401.83,
+            "y": 174.67,
+            "width": 140.33,
+            "height": 26.0,
+            "text": "见标准作业12-12-14",
+            "uri": "videos/2300a99fb741f470f1040437f708b14f.mp4"
+          }
+        },
+        {
+          "type": 9,
+          "hasevent": false,
+          "properties": {
+            "begin_x": 450.83,
+            "begin_y": 194.5,
+            "end_x": 378.17,
+            "end_y": 336.83,
+            "text": "见标准作业12-12-14"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 49.67,
+            "y": 282.5,
+            "width": 198.67,
+            "height": 48.33,
+            "text": "装配顺序：\n1-2-3-4-5-6"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 49.67,
+            "y": 150.83,
+            "width": 198.67,
+            "height": 29.0,
+            "text": "引用标准作业："
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 328.5,
+            "y": 313.67,
+            "width": 29.67,
+            "height": 32.33,
+            "text": "1"
+          }
+        },
+        {
+          "type": 9,
+          "hasevent": false,
+          "properties": {
+            "begin_x": 548.83,
+            "begin_y": 466.67,
+            "end_x": 622.33,
+            "end_y": 356.83,
+            "text": "1"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 467.5,
+            "y": 464.0,
+            "width": 94.67,
+            "height": 29.0,
+            "text": "X卡箍装配"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": true,
+          "properties": {
+            "x": 466.33,
+            "y": 483.17,
+            "width": 140.17,
+            "height": 25.83,
+            "text": "见标准作业11-12-13",
+            "uri": "videos/2300a99fb741f470f1040437f708b14f.mp4"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 583.17,
+            "y": 336.67,
+            "width": 29.83,
+            "height": 32.33,
+            "text": "2"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 280.33,
+            "y": 580.83,
+            "width": 198.67,
+            "height": 67.83,
+            "text": "注意事项：\n\n*******"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 477.83,
+            "y": 579.0,
+            "width": 152.0,
+            "height": 67.83,
+            "text": "工艺技术要求：\n\n*******"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 675.33,
+            "y": 583.17,
+            "width": 130.83,
+            "height": 67.83,
+            "text": "物料信息：\n\n*******"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": false,
+          "properties": {
+            "x": 55.0,
+            "y": 363.33,
+            "width": 198.83,
+            "height": 67.83,
+            "text": "工具信息：\n\n*******"
+          }
+        },
+        {
+          "type": 1,
+          "hasevent": false,
+          "properties": {
+            "x": 40.0,
+            "y": 40.0,
+            "width": 872.0,
+            "height": 31.33,
+            "text": "XX装配标准作业指导书"
+          }
+        },
+        {
+          "type": 17,
+          "hasevent": true,
+          "properties": {
+            "x": 48.67,
+            "y": 176.33,
+            "width": 198.67,
+            "height": 29.0,
+            "text": "XXXXXXXX",
+            "uri": "videos/2300a99fb741f470f1040437f708b14f.mp4"
+          }
+        },
+        {
+          "type": 13,
+          "hasevent": true,
+          "properties": {
+            "x": 42.83,
+            "y": 463.67,
+            "width": 226.0,
+            "height": 176.33,
+            "source": "imgs/2216baea11f94787b9609ef67f849ca1.png",
+            "uri": "videos/2300a99fb741f470f1040437f708b14f.mp4"
+          }
+        }
+      ]
+    }
+  ]
+}
