@@ -2,7 +2,7 @@ import os
 import shutil
 import time
 
-from flask import Flask, request
+from flask import Flask
 
 import ZipFile
 import minioUploader
