@@ -22,10 +22,10 @@ pptxParsePath = 'pptxParseTemp'
 @app.route('/parse/<zip_name>', methods=['GET'])
 def parse_pptx(zip_name):
     # 压缩文件名校验
-    x = re.search(r"\d*", zip_name)
+    x = re.search(r"(?<=/)\d+(?=-)", zip_name)
     if not x:
         return "压缩文件命名唯一码格式错误"
-    y = re.search(r"_\S{1,5}作业指导书", zip_name)
+    y = re.search(r"(?<=-)\w+作业指导书", zip_name)
     if not y:
         return "压缩文件命名指导书命名格式错误"
     z = re.search(r"【\S*】", zip_name)
@@ -62,10 +62,10 @@ def parse_pptx(zip_name):
             # filename命名规则：19010271751001_XX作业指导书【10-999】
             print(filename)
             # 匹配文件名中的唯一码
-            x = re.search(r"\d*", filename)
+            x = re.search(r"(?<=/)\d+(?=-)", filename)
             if not x:
                 return "pptx文件命名唯一码格式错误"
-            y = re.search(r"_\S{1,5}作业指导书", filename)
+            y = re.search(r"(?<=-)\w+作业指导书", filename)
             if not y:
                 return "pptx文件命名指导书命名格式错误"
             z = re.search(r"【\S*】", filename)
@@ -86,7 +86,7 @@ def parse_pptx(zip_name):
     # 压缩文件
     ZipFile.backupZip(pptxParsePath)
 
-    # 删除缓存文件夹
+    # 删除缓存文件夹以及下载源压缩文件
     shutil.rmtree(pptxParsePath)
 
     # 3.将解析后的压缩文件上传minio并返回地址与唯一码
