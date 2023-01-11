@@ -20,7 +20,7 @@ from pptx.enum.shapes import MSO_SHAPE_TYPE as mst
 # EMU单位到像素单位转换
 to_pixel = 914400 / 96
 
-pptxParsePath = 'pptxParse'
+pptxParsePath = 'pptxParseTemp'
 
 
 # 日期类型转化
@@ -136,9 +136,9 @@ def pptxParse(pptxName):
                 # print(shape.image.d content_type);
                 guid = str(uuid.uuid4()).replace("-", "")
                 # 删除'imgs/' + 'shape.image.filename + '
-                if not os.path.exists('pptxParse/imgs/'):
-                    os.makedirs('pptxParse/imgs/')
-                fileName = 'pptxParse/imgs/' + guid + '.png'
+                if not os.path.exists('pptxParseTemp/imgs/'):
+                    os.makedirs('pptxParseTemp/imgs/')
+                fileName = 'pptxParseTemp/imgs/' + guid + '.png'
                 imgFile = open(fileName, 'wb')
                 imgFile.write(shape.image.blob)
                 imgFile.close()
