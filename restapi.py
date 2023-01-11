@@ -22,7 +22,7 @@ pptxParsePath = 'pptxParseTemp'
 @app.route('/parse/<zip_name>', methods=['GET'])
 def parse_pptx(zip_name):
     # 压缩文件名校验
-    x = re.search(r"(?<=/)\d+(?=-)", zip_name)
+    x = re.search(r"\d*(?=-)", zip_name)
     if not x:
         return "压缩文件命名唯一码格式错误"
     y = re.search(r"(?<=-)\w+作业指导书", zip_name)
@@ -41,7 +41,8 @@ def parse_pptx(zip_name):
     print("minio下载文件名为: " + file)
 
     # 1.从minio下载目标压缩文件
-    minioUtil.download_file(bucket, file, os.getcwd() + os.sep + file,)
+    filePath = os.getcwd() + os.sep + file
+    minioUtil.download_file(bucket, file, filePath,)
 
     # 2.解压压缩文件以及解析其中的pptx
     # 判断压缩文件是否下载到当前工程目录下
@@ -59,10 +60,10 @@ def parse_pptx(zip_name):
 
     for filename in path_list:
         if os.path.splitext(filename)[1] == ".pptx":
-            # filename命名规则：19010271751001_XX作业指导书【10-999】
+            # filename命名规则：19010271751001-XX作业指导书【10-999】
             print(filename)
             # 匹配文件名中的唯一码
-            x = re.search(r"(?<=/)\d+(?=-)", filename)
+            x = re.search(r"\d*(?=-)", filename)
             if not x:
                 return "pptx文件命名唯一码格式错误"
             y = re.search(r"(?<=-)\w+作业指导书", filename)
@@ -88,6 +89,10 @@ def parse_pptx(zip_name):
 
     # 删除缓存文件夹以及下载源压缩文件
     shutil.rmtree(pptxParsePath)
+    if os.path.exists(filePath):
+        os.remove(filePath)
+    else:
+        print(filePath + "  不存在，无需删除")
 
     # 3.将解析后的压缩文件上传minio并返回地址与唯一码
     # minio 解析输出桶名
