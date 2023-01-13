@@ -101,7 +101,7 @@ def parse_pptx(zip_name):
     pptxParseZip = "pptxParse_" + str(int(time.time())) + ".zip"
 
     # arg1:minio桶名 arg2:压缩文件名 arg3:源文件地址
-    minioUtil.upload_minio(bucketName, pptxParseZip, "E:\PythonWorkspace\pptxParse\pptxParseTemp.zip")
+    minioUtil.upload_minio(bucketName, pptxParseZip, "D:\PythonWorkspace\pptxParse\pptxParseTemp.zip")
     print("upload success!")
     # 读取json
     if os.path.exists("pptx-parse.json"):
@@ -115,4 +115,4 @@ def parse_pptx(zip_name):
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=5000, threaded=True)
