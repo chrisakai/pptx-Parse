@@ -1,11 +1,5 @@
 from minio import Minio, S3Error
-
-MINIO_CONF = {
-    'endpoint': '192.168.3.184:9000',
-    'access_key': 'minioadmin',
-    'secret_key': 'minioadmin',
-    'secure': False
-}
+from config import MINIO_CONF
 
 
 # 上传文件至minio指定bucket中

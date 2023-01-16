@@ -3,16 +3,17 @@ import re
 import shutil
 import time
 
-from flask import Flask, request
+from flask import Flask, request, make_response
 
 import ZipFile
 import minioUtil
 import pptxParser
+import config
 
 app = Flask(__name__)
 
 # 临时解析文件夹
-pptxParsePath = 'pptxParseTemp'
+pptxParsePath = config.pptxParsePath
 
 
 # 根据请求解析的压缩文件名以及目标存放路径
@@ -25,7 +26,7 @@ def parse_pptx(zip_name):
     x = re.search(r"\d*(?=-)", zip_name)
     if not x:
         return "压缩文件命名唯一码格式错误"
-    y = re.search(r"(?<=-)\w+作业指导书", zip_name)
+    y = re.search(r"(?<=-).*作业指导书", zip_name)
     if not y:
         return "压缩文件命名指导书命名格式错误"
     z = re.search(r"【\S*】", zip_name)
@@ -66,7 +67,7 @@ def parse_pptx(zip_name):
             x = re.search(r"\d*(?=-)", filename)
             if not x:
                 return "pptx文件命名唯一码格式错误"
-            y = re.search(r"(?<=-)\w+作业指导书", filename)
+            y = re.search(r"(?<=-).*作业指导书", filename)
             if not y:
                 return "pptx文件命名指导书命名格式错误"
             z = re.search(r"【\S*】", filename)
@@ -96,12 +97,12 @@ def parse_pptx(zip_name):
 
     # 3.将解析后的压缩文件上传minio并返回地址与唯一码
     # minio 解析输出桶名
-    bucketName = "pptx"
+    bucketName = config.minio_bucket
     # minio中目标存放文件名
     pptxParseZip = "pptxParse_" + str(int(time.time())) + ".zip"
 
     # arg1:minio桶名 arg2:压缩文件名 arg3:源文件地址
-    minioUtil.upload_minio(bucketName, pptxParseZip, "D:\PythonWorkspace\pptxParse\pptxParseTemp.zip")
+    minioUtil.upload_minio(bucketName, pptxParseZip, config.local_pptParse_File + os.sep + pptxParsePath + ".zip")
     print("upload success!")
     # 读取json
     if os.path.exists("pptx-parse.json"):
@@ -111,8 +112,10 @@ def parse_pptx(zip_name):
     else:
         data = "没有json文件"
     # 返回地址与唯一码
-    return " savePath=" + bucketName + os.sep + pptxParseZip + " id=" + x.group() + " jsonBody=" + data
-
+    output_string = "savePath=" + "http://" + config.minio_host + ":" + config.minio_port + "/" + bucketName + \
+                    "/" + pptxParseZip + " id=" + x.group() + " jsonBody=" + data
+    response = make_response(output_string)
+    return response
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, threaded=True)
