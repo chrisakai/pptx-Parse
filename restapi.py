@@ -41,6 +41,10 @@ def parse_pptx(zip_name):
     file = zipSourcePath.split("/")[-1]
     print("minio下载文件名为: " + file)
 
+    # 0.初始化，删除缓存文件夹避免出现业务文件层级混乱
+    if os.path.exists(pptxParsePath):
+        shutil.rmtree(pptxParsePath)
+
     # 1.从minio下载目标压缩文件
     filePath = os.getcwd() + os.sep + file
     minioUtil.download_file(bucket, file, filePath,)
@@ -78,23 +82,23 @@ def parse_pptx(zip_name):
             print(pptxName)
             # 解析pptx
             pptxParser.pptxParse(pptxName)
-        # if os.path.isdir(pptxParsePath + os.sep + filename):
-        #     os.chdir(pptxParsePath + os.sep + filename)
-        #     print(os.getcwd())
-        #     video_list = os.listdir(os.getcwd())
-        #     for videoname in video_list:
-        #         if os.path.splitext(videoname)[1] == ".mp4":
-        #             src = os.path.join(pptxParsePath + os.sep + filename, videoname)
-        #             if not os.path.exists(pptxParsePath + os.sep + 'videos' + os.sep):
-        #                 os.makedirs(pptxParsePath + os.sep + 'videos' + os.sep)
-        #             dst = os.path.join(pptxParsePath + os.sep + 'videos' + os.sep, filename)
-        #             shutil.move(src, dst)
+        if os.path.isdir(pptxParsePath + os.sep + filename):
+            # os.chdir(pptxParsePath + os.sep + filename)
+            # print(os.getcwd())
+            video_list = os.listdir(pptxParsePath + os.sep + filename)
+            for videoname in video_list:
+                if os.path.splitext(videoname)[1] == ".mp4":
+                    src = os.path.join(pptxParsePath + os.sep + filename, videoname)
+                    if not os.path.exists(pptxParsePath + os.sep + 'videos' + os.sep):
+                        os.makedirs(pptxParsePath + os.sep + 'videos' + os.sep)
+                    dst = os.path.join(pptxParsePath + os.sep + 'videos' + os.sep, videoname)
+                    shutil.move(src, dst)
+            shutil.rmtree(pptxParsePath + os.sep + filename)
 
     # 压缩文件
     ZipFile.backupZip(pptxParsePath)
 
-    # 删除缓存文件夹以及下载源压缩文件
-    shutil.rmtree(pptxParsePath)
+    # 删除下载源压缩文件
     if os.path.exists(filePath):
         os.remove(filePath)
     else:
