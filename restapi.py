@@ -78,12 +78,17 @@ def parse_pptx(zip_name):
             print(pptxName)
             # 解析pptx
             pptxParser.pptxParse(pptxName)
-        if os.path.splitext(filename)[1] == ".mp4":
-            src = os.path.join(pptxParsePath + os.sep, filename)
-            if not os.path.exists(pptxParsePath + os.sep + 'videos' + os.sep):
-                os.makedirs(pptxParsePath + os.sep + 'videos' + os.sep)
-            dst = os.path.join(pptxParsePath + os.sep + 'videos' + os.sep, filename)
-            shutil.move(src, dst)
+        # if os.path.isdir(pptxParsePath + os.sep + filename):
+        #     os.chdir(pptxParsePath + os.sep + filename)
+        #     print(os.getcwd())
+        #     video_list = os.listdir(os.getcwd())
+        #     for videoname in video_list:
+        #         if os.path.splitext(videoname)[1] == ".mp4":
+        #             src = os.path.join(pptxParsePath + os.sep + filename, videoname)
+        #             if not os.path.exists(pptxParsePath + os.sep + 'videos' + os.sep):
+        #                 os.makedirs(pptxParsePath + os.sep + 'videos' + os.sep)
+        #             dst = os.path.join(pptxParsePath + os.sep + 'videos' + os.sep, filename)
+        #             shutil.move(src, dst)
 
     # 压缩文件
     ZipFile.backupZip(pptxParsePath)

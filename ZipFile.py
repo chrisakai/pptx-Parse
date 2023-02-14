@@ -41,8 +41,16 @@ def extractZip(zipFileName, extractPath):
         # 移动临时目录中的文件到指定目录中，并在移动时解决文件名中存在的乱码问题
         for file in os.listdir(temp_path):
             temp_file_path = os.path.join(temp_path, file)
-            new_file_path = os.path.join(file_path, file.encode('cp437').decode('gbk'))
-            shutil.move(temp_file_path, new_file_path)
+            if os.path.isdir(temp_file_path):
+                folder_path = os.path.join(file_path, file.encode('cp437').decode('gbk'))
+                create_directory(folder_path)
+                for videofile in os.listdir(temp_file_path):
+                    video_file_path = os.path.join(temp_file_path, videofile)
+                    new_file_path = os.path.join(folder_path, videofile.encode('cp437').decode('gbk'))
+                    shutil.move(video_file_path, new_file_path)
+            else:
+                new_file_path = os.path.join(file_path, file.encode('cp437').decode('gbk'))
+                shutil.move(temp_file_path, new_file_path)
 
         # 删除临时文件夹
         shutil.rmtree(temp_path)
