@@ -84,7 +84,7 @@ def pptxParse(pptxName):
     print("############Header#############")
     count = len(pptx.slides)
     print(count)
-    pptxname = pptxName.split("/")[-1]
+    pptxname = pptxName.split(os.sep)[-1]
     print(pptxname)
     version = pptx.core_properties.revision
     print(version)
@@ -245,4 +245,4 @@ def pptxParse(pptxName):
 
     toJson(Dict)
 
-    mycopyfile('pptx-parse.json', pptxParsePath + '/')
+    mycopyfile('pptx-parse.json', pptxParsePath + os.sep)
