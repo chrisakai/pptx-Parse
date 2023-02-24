@@ -23,10 +23,10 @@ pptxParsePath = config.pptxParsePath
 @app.route('/parse/<zip_name>', methods=['GET'])
 def parse_pptx(zip_name):
     # 压缩文件名校验
-    x = re.search(r"\d*(?=-)", zip_name)
+    x = re.search(r"^\d\w*(?=-)", zip_name)
     if not x:
         return "压缩文件命名唯一码格式错误"
-    y = re.search(r"(?<=-).*作业指导书", zip_name)
+    y = re.search(r"(?<=-).*指导书.*(?=【)", zip_name)
     if not y:
         return "压缩文件命名指导书命名格式错误"
     z = re.search(r"【\S*】", zip_name)
@@ -68,10 +68,10 @@ def parse_pptx(zip_name):
             # filename命名规则：19010271751001-XX作业指导书【10-999】
             print(filename)
             # 匹配文件名中的唯一码
-            x = re.search(r"\d*(?=-)", filename)
+            x = re.search(r"^\d\w*(?=-)", filename)
             if not x:
                 return "pptx文件命名唯一码格式错误"
-            y = re.search(r"(?<=-).*作业指导书", filename)
+            y = re.search(r"(?<=-).*指导书.*(?=【)", filename)
             if not y:
                 return "pptx文件命名指导书命名格式错误"
             z = re.search(r"【\S*】", filename)
@@ -87,7 +87,7 @@ def parse_pptx(zip_name):
             # print(os.getcwd())
             video_list = os.listdir(pptxParsePath + os.sep + filename)
             for videoname in video_list:
-                if os.path.splitext(videoname)[1] == ".mp4":
+                if os.path.splitext(videoname)[1] in [".wmv", ".mp4", ".mov", ".avi", ".rmvb", ".flv"]:
                     src = os.path.join(pptxParsePath + os.sep + filename, videoname)
                     if not os.path.exists(pptxParsePath + os.sep + 'videos' + os.sep):
                         os.makedirs(pptxParsePath + os.sep + 'videos' + os.sep)
