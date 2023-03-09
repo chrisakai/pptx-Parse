@@ -196,11 +196,33 @@ def pptxParse(pptxName):
                 if shape.has_text_frame:
                     text_frame = shape.text_frame
                     paragraphs = text_frame.paragraphs
-                    uri = ''
-                    paragraphs = text_frame.paragraphs
+                    uri = []
+                    tempLink = ''
+                    runText = ''
                     for graph in paragraphs:
                         for run in graph.runs:
-                            uri = run.hyperlink.address
+                            if run.hyperlink.address is not None:
+                                if tempLink != run.hyperlink.address:
+                                    tempLink = run.hyperlink.address
+                                    runText = run.text
+                                else:
+                                    runText = runText + run.text
+                            else:
+                                if tempLink is not None:
+                                    link = 'videos/' + tempLink.split('/')[-1]
+                                    links = {
+                                        'text': runText,
+                                        'link': link,
+                                    }
+                                    uri.append(links)
+                                    tempLink = ''
+                        if tempLink is not None:
+                            link = 'videos/' + tempLink.split('/')[-1]
+                        links = {
+                            'text': runText,
+                            'link': link,
+                        }
+                        uri.append(links)
 
                     # 文本框原点坐标，宽高
                     # Cx = (long)bm.Width * (long)((float)914400 / bm.HorizontalResolution);
@@ -215,8 +237,8 @@ def pptxParse(pptxName):
                         'height': height_cm,
                         'text': text_frame.text,
                     }
-                    if uri != None:
-                        jsonObj['uri'] = 'videos/' + uri
+                    if uri is not None:
+                        jsonObj['uri'] = uri
                         data = {'type': shape.shape_type,
                                 'hasevent': True,
                                 'properties': jsonObj}

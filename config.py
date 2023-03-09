@@ -12,5 +12,6 @@ MINIO_CONF = {
 minio_bucket = 'pptx'
 # 解析文件夹的暂存路径
 local_pptParse_File = 'E:\PythonWorkspace\pptxParse'
+# local_pptParse_File = '/home/rootcf/PythonWorkspace/pptxParse'
 # 临时解析文件夹名
 pptxParsePath = 'pptxParseTemp'
